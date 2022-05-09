@@ -1,0 +1,256 @@
+body{
+    font-family: 'Inconsolata', monospace;
+    margin: 0%;
+    width: 100%;
+    height: 100vh;
+    background-image: url('http://cdn.osxdaily.com/wp-content/uploads/2018/06/macos-mojave-default-wallpaper-light.jpg');
+    background-size: cover;
+    background-position: center;
+}
+a{
+    cursor: pointer;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.terminal{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 33px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 3px 33px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 3px 33px 0px rgba(0,0,0,0.4);
+    background-color: white;
+    width: 90%;
+    height: 90vh;
+    min-width: 700px;
+}
+
+
+
+.terminal-title, .project-title{
+    display: flex;
+    align-items: center;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px; 
+    height: 25px;
+    min-height: 25px;
+    background: #f4f4f4;
+    background: -moz-linear-gradient(top, #f4f4f4 0%, #ffffff 52%, #ededed 100%);
+    background: -webkit-linear-gradient(top, #f4f4f4 0%,#ffffff 52%,#ededed 100%);
+    background: linear-gradient(to bottom, #f4f4f4 0%,#ffffff 52%,#ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#ededed',GradientType=0 );
+}
+
+.term-buttons, .proj-buttons, .preference-buttons{
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 6px;
+}
+
+.active div{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin: 0% 3px;
+    cursor: pointer;
+}
+
+.red{
+    background-color: SALMON;
+}
+.yellow{
+    background-color: GOLD;
+}
+.green{
+    background-color: LIGHTGREEN;
+}
+.grey{
+    background-color: lightgrey;
+}
+.blue-text{
+    color: blue;
+}
+.close{
+    padding-right: 0.5px;
+    padding-top: 1px;
+}
+.minimize{
+    padding-top: 35%;
+}
+
+.enlarge{
+    padding-right: 0.5px;
+    padding-top: 1px;
+}
+
+.active div img{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5px;
+    display: block;
+    margin-top: 2px;
+}
+
+.title, .project-name-fill{
+    text-align: center;
+    width: 100%;
+    color:black;
+}
+
+.terminal-body{
+    height: 95%;
+    width: 100;
+    overflow: auto;
+}
+
+.terminal-body pre{
+    font-size: 1.15rem;
+    line-height: 1.25rem;
+    color: black;
+    padding-left: 15px;
+}
+
+.project-view, .preference-window{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 33px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 3px 33px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 3px 33px 0px rgba(0,0,0,0.4);
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin-top: 22.5%;
+    background-color: white;
+}
+
+.transform{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.transform-active{
+    width: 90%;
+    height: 90vh;
+    margin-top: 0%;
+}
+
+.proj-body{
+    height: 95%;
+    width: 100;
+    overflow: auto;
+}
+
+.project-body{
+    overflow: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+.project-content{
+    padding-bottom: 50px;
+}
+
+.UC-pic{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    display: block;
+    width: 50%;
+}
+.UC-desc{
+    text-align: center;
+}
+
+.project-header{
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+#headerPic{
+    max-width: 150px;
+    max-height: 100px;
+    margin-left: 40px;
+}
+hr{
+    border-color: #0091F7;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.items {
+    display: flex;
+    flex: 0 0 auto;
+}
+
+
+.items p{
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin: 3px;
+    background-color: white;
+    justify-content: flex-end;
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

@@ -1,0 +1,16 @@
+.firstImage{
+    width: 100%;
+    height: auto;
+}
+
+.p-33-l{
+    float: left;
+    width: 33%;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    
+}
+.p-66-r{
+    width: 66%;
+    float: right;
+}
