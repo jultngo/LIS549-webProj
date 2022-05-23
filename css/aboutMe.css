@@ -1,0 +1,162 @@
+.active-state-1{
+    width: 750px;
+    height: 450px;
+    margin-top: 0%;
+}
+
+.preference-title{
+    display: flex;
+    align-items: center;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px; 
+    height: 40px;
+    min-height: 25px;
+    background: #f4f4f4;
+    background: -moz-linear-gradient(top, #f4f4f4 0%, #ffffff 52%, #ededed 100%);
+    background: -webkit-linear-gradient(top, #f4f4f4 0%,#ffffff 52%,#ededed 100%);
+    background: linear-gradient(to bottom, #f4f4f4 0%,#ffffff 52%,#ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#ededed',GradientType=0 );
+}
+.preference-name{
+    margin: auto;
+}
+.tabs{
+    border-radius: 25px 25px 25px 25px;
+    display: inline-flex;
+}
+
+.tabs div{
+    background-color: lightgray;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-left: 1px solid black;
+}
+
+.tabs div:hover{
+    cursor: pointer;
+}
+
+#firstTab{
+    border-radius: 25px 0px 0px 25px;
+    border-left: 0px;
+}
+
+#lastTab{
+    border-radius: 0px 25px 25px 0px;
+}
+
+.tabs .selected{
+    background-color: darkgray;
+}
+
+.preference-body #overview div{
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+}
+
+.preference-body #overview{
+    margin-top: 5%;
+}
+#overview img{
+    width: auto;
+    height: 250px;
+    float: left;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+header{
+    font-size: 45px;
+}
+
+#overview p{
+    font-size: 15px;
+    margin: 0px;
+    padding-right: 40px;
+}
+
+#game-screen{
+    align-content: center;
+}
+
+#counter{
+    margin-top: 50px;
+    padding: auto;
+    text-align: center;
+    font-size: 50px;
+}
+#encapsulate{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+#upgradeTab{
+    background-color: red;
+    width: 250px;
+    height: 25px;
+    margin: auto;
+    display: flex;
+}
+#upgrades{
+    width: 75%;
+    background-color: black;
+    margin: auto;
+    height: 0px;
+    align-content: center;
+    visibility: visible;
+}
+
+.buttonHolder{
+    text-align: center;
+}
+
+.empty-bar{
+    height: 25px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: darkgrey;
+}
+
+.fill-50{
+    height: 25px;
+    width: 0px;
+    background-color: red;
+    border-radius: 5px 0px 0px 5px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.fill-80{
+    height: 25px;
+    width: 0px;
+    background-color: red;
+    border-radius: 5px 0px 0px 5px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#skills{
+    width: 100%;
+}
+
+#skills table{
+    width: 100%;
+}
+
+#skills table tr{
+    width: 100%;
+}
+
